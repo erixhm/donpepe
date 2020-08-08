@@ -9,10 +9,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author PC
- */
 public class LoginControlador implements ActionListener{
     private final login login ;
     private final UsuarioDAO dao=new UsuarioDAO();
@@ -36,7 +32,7 @@ public class LoginControlador implements ActionListener{
                 ArrayList<Usuario> list;
                 list = dao.logueo(usuario, clavedef);
                 if(list.size()>0){
-                    JOptionPane.showMessageDialog(null, "Bienvenido al sistema", "INFO.", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "¡¡Bienvenido al Sistema!!", "DONPEPE", JOptionPane.INFORMATION_MESSAGE);
                     login.dispose();
                     PaginaPrincipal inicio = new PaginaPrincipal();
                     //inicio.setExtendedState(MAXIMIZED_BOTH);
